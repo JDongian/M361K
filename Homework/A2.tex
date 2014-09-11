@@ -1,0 +1,239 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{centernot}
+
+\begin{document}
+
+\title{M361K\: Homework 2}
+\author{Joshua Dong}
+\date{\today}
+\maketitle
+
+\subsection{2.1.1}
+$a, b \in \mathbb{R}$. Prove:
+\\a) $a+b = 0 \rightarrow b = -a
+\\a+b = 0
+\\a+b+(-a) = 0+(-a)
+\\b+a+(-a) = -a $ by A1 $
+\\b+(a-a) = -a $ by A2 $
+\\b = -a
+\\\therefore a+b = 0 \rightarrow b = -a$.
+\\b) $-(-a) = a
+\\-(-a) = -1 \cdot (-1 \cdot a) =
+\\$ by M2 $ (-1 \cdot -1) \cdot a =
+\\1 \cdot a = a
+\\\therefore -(-a) = a$.
+\\c) $(-1)a = -a
+\\(-1)a = -(1a) = -a $ by M2 and M3, respectively $
+\\\therefore (-1)a = -a$.
+\\d) $(-1)(-1) = 1
+\\(-1)(-1) = -(-1) = 1 $ by b) $
+\\\therefore (-1)(-1) = 1$.
+
+\subsection{2.1.2}
+$a, b \in \mathbb{R}$. Prove:
+\\a) $-(a+b) = (-a) + (-b)
+\\-(a+b) = (-a) + (-b) $ by the distributive law of multiplication of reals $
+\\\therefore -a+-b = (-a) + (-b)$.
+\\b) $(-a) \cdot (-b) = a \cdot b
+(-a) \cdot (-b) = (-1 \cdot a) \cdot (-1 \cdot b) =
+\\$ by M1 and M2 $ (-1 \cdot -1) \cdot (a \cdot b) = 
+\\a \cdot b
+\\\therefore (-a) \cdot (-b) = a \cdot b$.
+\\c) $\frac{1}{-a} = -(\frac{1}{a})
+\\\frac{1}{-a} =
+\\\frac{1}{-1 \cdot a} = 
+\\$ by M1 $ -1 \cdot \frac{1}{a} = 
+\\-(\frac{1}{a}).
+\\\therefore \frac{1}{-a} = -(\frac{1}{a})$.
+\\d) $b \neq 0 \rightarrow -(\frac{a}{b}) = \frac{-a}{b}
+\\$ Since $b^{-1}$ exists, $
+\\-(\frac{a}{b}) = -1 \cdot \frac{a}{b} =
+\\$ by M1 $ \frac{-1 \cdot a}{b} =
+\\\frac{a}{b}
+\\\therefore b \neq 0 \rightarrow -(\frac{a}{b}) = \frac{-a}{b}$.
+
+\subsection{2.1.4}
+$a \in \mathbb{R}$ and $a \cdot a = a$. Prove $a \in \{0, 1\}$.
+\\Let $n \in \mathbb{R}$ where $a = n+1$.
+\\$a \cdot a = a
+\\(1+n) \cdot (1+n) = (1+n)
+\\n^2 + 2n +1 = n + 1
+\\n^2 + n = 0
+\\n(n+1) = 0$.
+\\The above is only true if $n \in \{-1, 0\}
+\\\therefore \; a \in \{-1+1, 0+1\} = \{0, 1\} $
+
+\subsection{2.1.5}
+Show $a \neq 0$ and $b \neq 0 \rightarrow \frac{1}{ab} =
+(\frac{1}{a})(\frac{1}{b})$.
+\\$a \neq 0$ and $b \neq 0
+\\\therefore \exists a^{-1}, \exists b^{-1}.
+\\$ Let $n \in \mathbb{R}$ where $\frac{1}{ab} = n.
+\\$ Note that $n \cdot ab = \frac{1}{ab} \cdot ab = (ab)^{-1} \cdot ab = 1.
+\\\frac{1}{ab} = n
+\\ab \cdot \frac{1}{ab} = ab \cdot n
+\\a^{-1}b^{-1}ab \cdot \frac{1}{ab} = a^{-1}b^{-1}ab \cdot n =
+a^{-1}b^{-1} \cdot 1.
+\\\therefore \frac{1}{ab} = a^{-1}b^{-1}
+\\\therefore a \neq 0$ and $b \neq 0 \rightarrow \frac{1}{ab} =
+(\frac{1}{a})(\frac{1}{b})$.
+
+\subsection{2.1.6}
+Show $\nexists s \in \mathbb{R}$ such that $s^2 = 6$.
+\\Suppose, on the contrary, that $p$ and $q$ are integers such that
+$(\frac{p}{q})^2 = 6$. We may assume that $p$ and $q$ are positive and
+$p \perp q$. Since $p^2 = 6q^2$, we see that $2 \mid p^2$ and $3 \mid p^2$,
+thus $2 \mid p$ and $3 \mid p$ and $6 \mid p$. $p \perp q \rightarrow
+6 \nmid q$.
+\\Since $6 \mid p$, then $p = 6m$ for some $m \in \mathbb{N}$, and hence
+$36m^2 = 6q^2$, so that $6m^2 = q^2. \therefore 6 \mid q^2$, and it follows
+that $2 \mid q^2$ and $3 \mid q^2$, thus $2 \mid q$ and $3 \mid q$ and
+$6 \mid q$. Since $(\frac{p}{q})^2 = 6 \rightarrow 6 \mid q$ and $6 \mid p$,
+but $q \perp p$, the hypothesis must be false.
+
+\subsection{2.2.1}
+$a,b \in \mathbb{R}. \;\; b \neq 0.$ Show:
+\\a) $|a| = \sqrt{(a^2)}$
+\\$|a|^2 = a^2$ by 2.2.2.b.
+\\$\sqrt{|a|^2} = \sqrt{a^2}$.
+\\$|a| = \sqrt{a^2}$, since $|a| > 0.
+\\\therefore |a| = \sqrt{(a^2)}$.
+\\
+\\b) $|\frac{a}{b}| = \frac{|a|}{|b|}$
+\\5 cases:
+\\1) $a < 0, b < 0$
+\\2) $a < 0, b > 0$
+\\3) $a > 0, b > 0$
+\\4) $a > 0, b < 0$
+\\5) $a = 0, b \neq 0$
+\\
+\\1) $a < 0, b < 0
+\\|a| = -a, |b| = -b.
+\\\frac{|a|}{|b|} = \frac{-a}{-b} = \frac{a}{b}.
+\\b < 0. \;\; 1 > 0. \;\; \therefore b^{-1} < 0.
+\\\frac{a}{b} = ab^{-1} > 0$, since the product of two negatives is positive.
+\\$\therefore |\frac{a}{b}| = \frac{a}{b}.
+\\\frac{|a|}{|b|} = \frac{a}{b} = |\frac{a}{b}|.
+\\\therefore a < 0, b < 0 \rightarrow |\frac{a}{b}| = \frac{|a|}{|b|}$.
+\\
+\\2) $a < 0, b > 0
+\\|a| = -a, |b| = b.
+\\\frac{|a|}{|b|} = \frac{-a}{b} = -\frac{a}{b}.
+\\b > 0. \;\; 1 > 0. \;\; \therefore b^{-1} > 0.
+\\\frac{a}{b} = ab^{-1} < 0$, since the product of negative and positive is
+negative.
+\\$\therefore |\frac{a}{b}| = -\frac{a}{b}.
+\\\frac{|a|}{|b|} = -\frac{a}{b} = |\frac{a}{b}|.
+\\\therefore a < 0, b > 0 \rightarrow |\frac{a}{b}| = \frac{|a|}{|b|}$.
+\\
+\\3) $a > 0, b > 0
+\\|a| = a, |b| = b.
+\\\frac{|a|}{|b|} = \frac{a}{b} = \frac{a}{b}.
+\\b > 0. \;\; 1 > 0. \;\; \therefore b^{-1} > 0.
+\\\frac{a}{b} = ab^{-1} > 0$, since the product of two positives is positive.
+\\$\therefore |\frac{a}{b}| = \frac{a}{b}.
+\\\frac{|a|}{|b|} = \frac{a}{b} = |\frac{a}{b}|.
+\\\therefore a > 0, b > 0 \rightarrow |\frac{a}{b}| = \frac{|a|}{|b|}$.
+\\
+\\4) $a > 0, b < 0
+\\|a| = a, |b| = -b.
+\\\frac{|a|}{|b|} = \frac{-a}{b} = -\frac{a}{b}.
+\\b < 0. \;\; 1 > 0. \;\; \therefore b^{-1} < 0.
+\\\frac{a}{b} = ab^{-1} < 0$, since the product of negative and positive is
+negative.
+\\$\therefore |\frac{a}{b}| = -\frac{a}{b}.
+\\\frac{|a|}{|b|} = -\frac{a}{b} = |\frac{a}{b}|.
+\\\therefore a > 0, b < 0 \rightarrow |\frac{a}{b}| = \frac{|a|}{|b|}$.
+\\
+\\5) $a = 0, b \neq 0.
+\\\frac{|a|}{|b|} = 0 = |0| = |\frac{a}{b}|.
+\\\therefore a = 0, b \neq 0 \rightarrow |\frac{a}{b}| = \frac{|a|}{|b|}$.
+\\
+\\$\therefore |\frac{a}{b}| = \frac{|a|}{|b|} \forall a,b \in \mathbb{R},
+b \neq 0$.
+
+\subsection{2.2.5}
+If $a < x < b$ and $a < y < b$, show that $|x - y| < b - a$. Interpret this
+geometrically.
+\\$a < x < b, a < y < b.
+\\-a > -y  > -b.
+\\a - a > a - y > a - b.
+\\a - b < a - y.
+\\
+\\-a > -y  > -b.
+\\b - a > b - y > b - b.
+\\b - y < b - a.
+\\
+\\a < x < b
+\\a - y < x - y < b - y
+\\a - b < a - y < x - y < b - y < b - a.
+\\a - b < x - y < b - a.
+\\
+\\x - y > 0 \rightarrow |x - y| = x - y \rightarrow |x - y| < b - a.
+\\x - y < 0 \rightarrow |x - y| = -(x - y).
+\\-(x - y) < -(a - b) = b - a.
+\\\therefore x - y < 0 \rightarrow |x - y| < b - a.
+\\\therefore |x - y| < b - a$.
+\\Geometrically, this means that any two points selected within a range will
+not have a distance greater than the span of the range.
+
+\newpage
+
+\subsection{2.2.16}
+Let $\varepsilon > 0$ and $\delta > 0$, and $a, b \in \mathbb{R}$. Show that
+$V_\varepsilon(a) \cap V_\delta(a)$ and $ V_\varepsilon(a) \cup V_\delta(a)$
+are $\gamma$-neighborhoods of $a$ for appropriate values of $\gamma$.
+\\$V_\varepsilon(a) \cap V_\delta(a) =
+\{x \in \mathbb{R} \mid |x-a| < \varepsilon\} \cap
+\{x \in \mathbb{R} \mid |x-a| < \delta\} =
+\\\{x \in \mathbb{R} \mid |x-a| < min(\varepsilon, \delta)\} = 
+V_{min(\varepsilon, \delta)}(a).
+\\min(\varepsilon, \delta) \in \{\varepsilon, \delta\} \subseteq \mathbb{R}.
+\\\therefore \exists \gamma \in \mathbb{R}$ where $V_\gamma(a) \subseteq
+V_\varepsilon(a) \cap V_\delta(a)$.
+\\
+\\$V_\varepsilon(a) \cup V_\delta(a) =
+\{x \in \mathbb{R} \mid |x-a| < \varepsilon\} \cup
+\{x \in \mathbb{R} \mid |x-a| < \delta\} =
+\\\{x \in \mathbb{R} \mid |x-a| < max(\varepsilon, \delta)\} = 
+V_{max(\varepsilon, \delta)}(a).
+\\max(\varepsilon, \delta) \in \{\varepsilon, \delta\} \subseteq \mathbb{R}.
+\\\therefore \exists \gamma \in \mathbb{R}$ where $V_\gamma(a) \subseteq
+V_\varepsilon(a) \cup V_\delta(a).
+\\
+\\\therefore V_\varepsilon(a) \cap V_\delta(a)$ and $ V_\varepsilon(a) \cup
+V_\delta(a)$ are $\gamma$-neighborhoods of $a$ for appropriate values of
+$\gamma$.
+
+
+\subsection{2.2.17}
+Show that $a, b \in \mathbb{R}, a \neq b \rightarrow \exists \;
+\varepsilon$-neighborhoods $U$ of $a$ and $V$ of $b$ such that $U \cap
+V = \emptyset$.
+\\Let $\alpha \in \mathbb{R}$ where $V_\alpha(a) = U$ and let $\beta \in
+\mathbb{R}$ where $V_\beta(b) = V$.
+\\Without loss of generality, let $a < b$.
+\\If we can show that $max(V_\alpha(a)) < min(V_\beta(b))$, then $U$ and $V$
+are disjoint, as any intersection between them would contain the points
+$max(V_\alpha(a))$ and $min(V_\beta(b))$.
+\\Suppose $\alpha = \beta = \frac{b-a}{3}$.
+\\Then $\max(V_\alpha(a)) = a + \alpha = a + \frac{b-a}{3}$ and
+$\min(V_\beta(b)) = b - \beta = b - \frac{b-a}{3}.
+\\
+\\max(V_\alpha(a)) - min(V_\beta(b)) =
+a + \frac{b-a}{3} - (b - \frac{b-a}{3}) = 
+a - b + \frac{2(b-a)}{3} = 
+(a-b)(1 - \frac{2}{3}) =
+(a-b)(\frac{1}{3}).
+\\(a-b)(\frac{1}{3}) < 0$ since the product of positive and negative is
+negative.
+\\$\therefore max(V_\alpha(a)) < min(V_\beta(b))
+\\\therefore U$ and $V$ are disjoint.
+\\$\therefore U \cap V = \emptyset$ when $\alpha = \beta = \frac{b-a}{3}.
+\\\therefore a, b \in \mathbb{R}, a \neq b \rightarrow \exists \;
+\varepsilon$-neighborhoods $U$ of $a$ and $V$ of $b$ such that $U \cap
+V = \emptyset$.
+
+\end{document}
