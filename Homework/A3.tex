@@ -1,0 +1,121 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{centernot}
+
+\begin{document}
+
+\title{M361K\: Homework 2}
+\author{Joshua Dong}
+\date{\today}
+\maketitle
+
+\subsection{2.3.1}
+Let $S_1 = \{x \in \mathbb{R}: x \ge 0\}$. Show $S_1$ has lower bounds, but
+no upper bounds. Show that $\inf{S_1} = 0$.
+\\Assume by that an upper bound, $v \in \mathbb{R}$, exists.
+\\$v \ge 0$ (since $\exists x \in S_1$ where $x \ge 0$, and an upper bound
+must be greater than any given element of the set).
+\\$v+1 \ge 1 \ge 0$.
+\\$v+1 \ge 0 \rightarrow v+1 \in S_1$. Therefore $v$ is not an upper bound,
+contradiction.
+\\$\therefore \nexists v \in \mathbb{R}$ where $v$ is a lower bound of
+$S_3$. 
+\\
+\\0 is a lower bound of $S_1$, by definition of $S_1$.
+\\Let $t \in \mathbb{R}$ where $t > 0$.
+\\$t > 0$ and $2 > 0.
+\\\therefore \frac{t}{2} > 0.
+\\t > \frac{t}{2} > 0.
+\\\therefore$ t is not a lower bound.
+\\Thus $\inf{S_1} = 0$.
+
+\subsection{2.3.3}
+Let $S_3 = \{\frac{1}{n}: n \in \mathbb{N}\}$. Show that $\sup{S_3} = 1$ and
+$\inf{S_3} \ge 0$ (Archemedian property 2.4).
+\\First we show that $\frac{1}{n} > \frac{1}{n+1}:
+\\\frac{1}{n} - \frac{1}{n+1} = \frac{(n+1)-n}{n(n+1)} = \frac{1}{n(n+1)}.
+\\1, n, (n+1) > 0.
+\\\therefore \frac{1}{n(n+1)} > 0.
+\\\therefore \frac{1}{n} > \frac{1}{n+1}$.
+\\This means that the smallest $n \in \mathbb{N}$ will produce the greatest
+$\frac{1}{n}$.
+\\$\therefore \sup{S_3} = \frac{1}{1} = 1$.
+\newpage
+\noindent Now we show that the infinimum is 0 because $\frac{1}{n}$
+can become arbitrarily close to 0.
+\\$1,n > 0 \rightarrow \frac{1}{n} > 0.
+\\\therefore 0$ is a lower bound for $S_3$.
+\\$\therefore \exists w = \inf{S}, w \ge 0.
+\\\forall \varepsilon > 0 \;\;\; \frac{1}{\varepsilon} \in \mathbb{R}
+\rightarrow \exists n \in \mathbb{N}$ such that $\frac{1}{\varepsilon} < n
+\rightarrow \frac{1}{n} < \varepsilon
+\\0 \le w \le \frac{1}{n} < \varepsilon
+\\\forall \varepsilon > 0 \;\;\; 0 \le w < \varepsilon
+\\\therefore w = 0$.
+\\$\therefore \inf{S_3} = 0$.
+
+\subsection{2.3.4}
+Let $S_4 = \{1-\frac{(-1)^n}{n}: n \in \mathbb{N}\}$. Find $\inf{S_4}$ and
+$\sup{S_4}$.
+\\Let $S_4 = 1+S_5 = 1+\{-\frac{(-1)^n}{n}: n \in \mathbb{N}\}.
+\\-\frac{(-1)^n}{n} \le |-\frac{(-1)^n}{n}| \forall n \in \mathbb{N}.
+\\\therefore \sup{S_5} \le \sup{\{|-\frac{(-1)^n}{n}|: n \in \mathbb{N}\}}.
+\\\therefore 1$ is an upper bound on $S_5.
+\\1$ is an element of $S_5$ (when $n=1).
+\\\therefore 1 = \sup{S_5}.
+\\\therefore 2 = \sup{S_4}.
+\\
+\\$By symmetry, $\inf{S_5} \ge
+\inf{\{-|-\frac{(-1)^n}{n}|: n \in \mathbb{N}\}}.
+\\$Observe that this set is increasing. This means that the first value that
+is in both sets will be the infinimum of $S_5.
+\\-1 \not\in \inf{\{-\frac{(-1)^n}{n}: n \in \mathbb{N}\}}.
+\\-\frac{1}{2} \in \inf{\{-\frac{(-1)^n}{n}: n \in \mathbb{N}\}}.
+\\\therefore -\frac{1}{2} = \inf{S_5}.
+\\\therefore \frac{1}{2} = \inf{S_4}$.
+
+\subsection{2.3.6}
+Let $S$ be a nonempty subset of $\mathbb{R}$ that is bounded below.
+\\Prove that $\inf{S} = -\sup{\{-s: s \in S\}}$.
+\\
+\\By definition of infinimum, $\forall s \in S$, $\inf{S} \le s$ and
+$\nexists$ a lower bound $m$ such that $m > \inf{S}$.
+\\$\therefore -\inf{S} > -s \;\;\; \forall {-s} \in S$.
+\\This implies $-\inf{S}$ is an upper bound for $\{-s: s \in S\}$.
+\\
+\\Since $\nexists$ a lower bound $m$ such that $m > \inf{S}$,
+\\$m \le \inf{S} \;\;\; \forall m$ where m is a lower bound.
+\\Using similar logic to the previous argument,
+\\$m$ is a lower bound $\rightarrow -m > -s \;\;\; \forall {-s} \in S
+\rightarrow -m$ is an upper bound.
+\\$\therefore -m \ge -\inf{S} \;\;\; \forall -m$ where $-m$ is an upper
+bound.
+\\
+\\$\therefore -\inf{S} = \sup{\{-s: s \in S\}}$, by definition of supremum.
+\\$\therefore \inf{S} = -\sup{\{-s: s \in S\}}$.
+
+\subsection{2.3.7}
+If a set $S \subseteq \mathbb{R}$ contains one of its upper bounds, show that
+this upper bound is the supremum of $S$.
+\\We need only prove that any upper bound of $S$ must be greater than or
+equal to its higest element:
+\\Let $v$ be an upper bound of $S$. We want to show that the greatest
+element, $u$, is less than or equal to $v$.
+\\Assume the contrary, that is, $u > v$. Since $u$ is an element of $S$, $v$
+is not an upper bound, contradiction.
+\\Therefore if a set $S \subseteq \mathbb{R}$ contains one of its upper
+bounds, this upper bound is the supremum of $S$.
+
+\subsection{2.3.8}
+Let $S \subseteq \mathbb{R}$ be nonempty. Show that $u \in \mathbb{R}$ is
+an upper bound of $S$ iff $(t \in \mathbb{R}$ and $t > u)
+\rightarrow t \not\in S$.
+\\$(t \in \mathbb{R}$ and $t > u) \rightarrow t \not\in S
+\\t \not\in S \;\;\; \forall t \in \mathbb{R}$ where $t > u.
+\\\neg(\exists t \in \mathbb{R}$ where $t > u$ and $t \in S).
+\\t \le u \;\;\; \forall t \in \mathbb{R}$ where $t \in S.
+\\t \le u \;\;\; \forall t \in S$.
+\\This is the definition of an upper bound.
+
+\end{document}
